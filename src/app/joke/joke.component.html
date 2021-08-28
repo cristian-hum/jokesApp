@@ -1,0 +1,7 @@
+<div class="joke">
+    <div class="joke-setup-container">
+        <p>{{setup}}</p>
+        <button type="button" (click)= "onBtnClick()" *ngIf="!hasTheButtonBeenPushed" >Deliver!</button>
+    </div>
+    <p *ngIf="hasTheButtonBeenPushed">{{punchLine}}</p>
+</div>

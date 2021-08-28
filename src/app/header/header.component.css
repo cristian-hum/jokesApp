@@ -1,0 +1,10 @@
+.header{
+    display: flex;
+    align-items: center;
+    border-bottom: solid;
+}
+
+.emptySpace{
+flex-grow: 1;
+}
+

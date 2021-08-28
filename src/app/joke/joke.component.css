@@ -1,0 +1,13 @@
+.joke{
+    border : 1px dashed darkblue;
+    padding: 10px;
+}
+
+.joke-setup-container{
+    display: flex;
+    align-items: center;
+}
+
+.joke-setup-container > button{
+    margin-left: 10px;
+}
