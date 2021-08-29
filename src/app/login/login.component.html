@@ -1,1 +1,9 @@
-<a routerLink="/home">Login</a>
+<a [routerLink]="['home']">Login</a>
+
+<br />
+
+<button (click)="onLoginBtnClick()">Login</button>
+
+<br />
+
+<div routerLink="home">Div cu login</div>
