@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HeaderModule } from './header/header.module'
 import { JokesListModule } from './jokes-list/jokes-list.module';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { JokesListModule } from './jokes-list/jokes-list.module';
     BrowserModule,
     HeaderModule,
     HttpClientModule, 
-    JokesListModule
+    JokesListModule, AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
