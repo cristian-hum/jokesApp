@@ -14,7 +14,11 @@ export class AppComponent implements OnInit {
     console.log("am apelat ngOnInnit");
     this.jokeService.getAllJokes().subscribe()}
 
-  constructor(private jokeService : JokeService){
+  constructor(public jokeService : JokeService){
     console.log(jokeService);
+  }
+
+  refreshJokes =() => {
+    this.jokeService.getAllJokes().subscribe();
   }
 }

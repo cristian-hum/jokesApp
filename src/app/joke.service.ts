@@ -30,7 +30,7 @@ export class JokeService {
 
 }
 
-interface IJoke {
+export interface IJoke {
   setup:string;
   delivery:string;
   id:number;

@@ -1,16 +1,16 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { connectableObservableDescriptor } from 'rxjs/internal/observable/ConnectableObservable';
 
 @Component({
   selector: 'app-joke',
   templateUrl: './joke.component.html',
   styleUrls: ['./joke.component.css']
 })
-export class JokeComponent implements OnInit {
+export class JokeComponent  {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+ 
 
   @Input() setup! : string;
 
@@ -19,5 +19,9 @@ export class JokeComponent implements OnInit {
   hasTheButtonBeenPushed : boolean = false;
 
   onBtnClick = () => { this.hasTheButtonBeenPushed = true; }
+
+  
+
+  
 
 }

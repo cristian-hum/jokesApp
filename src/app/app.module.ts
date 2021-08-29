@@ -4,7 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderModule } from './header/header.module'
-import { JokeModule } from './joke/joke.module';
+import { JokesListModule } from './jokes-list/jokes-list.module';
 
 @NgModule({
   declarations: [
@@ -13,8 +13,8 @@ import { JokeModule } from './joke/joke.module';
   imports: [
     BrowserModule,
     HeaderModule,
-    JokeModule,
-    HttpClientModule
+    HttpClientModule, 
+    JokesListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

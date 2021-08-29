@@ -1,0 +1,4 @@
+<button class="refresh-jokes-btn" (click)="refreshJokes.emit()" >Get new jokes</button>
+<app-joke *ngFor="let joke of jokes"
+[setup]="joke.setup" 
+[punchLine]="joke.delivery" ></app-joke>
